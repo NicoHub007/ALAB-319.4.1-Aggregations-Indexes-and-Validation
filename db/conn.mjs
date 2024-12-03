@@ -1,5 +1,10 @@
 import { MongoClient } from "mongodb";
 
+// allows to access the .env file
+import dotenv from "dotenv";
+dotenv.config();
+
+
 const client = new MongoClient(process.env.ATLAS_URI);
 
 let conn;
